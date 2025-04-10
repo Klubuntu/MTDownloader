@@ -77,7 +77,7 @@ if %errorlevel% equ 0 (
 )
 
 :update
-curl https://raw.githubusercontent.com/MTSoftwareTeam/MTDownloader/refs/heads/main/ver --silent --output info\ver.txt
+curl https://raw.githubusercontent.com/Klubuntu/MTDownloader/refs/heads/main/info/ver --silent --output info\ver.txt
 set /p new_ver=<"info\ver.txt"
 del info\ver.txt /q
 if "%new_ver%"=="%ver%" (
